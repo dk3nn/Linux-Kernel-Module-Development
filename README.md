@@ -22,31 +22,31 @@ C, Linux Kernel, VirtualBox, Ubuntu/Bodhi Linux
 
 ## Setup
 1. Clone repo
-'''git clone https://github.com/dk3nn/Linux-Kernel-Module-Development.git'''
+''git clone https://github.com/dk3nn/Linux-Kernel-Module-Development.git''
 2. Go to project folder
-'''cd Linux-Kernel-Module-Development'''
+''cd Linux-Kernel-Module-Development''
 3. Compile modules
-'''make'''
+''make''
 4. Insert a module
-'''sudo insmod simple.ko
+''sudo insmod simple.ko
 sudo insmod hello.ko
 sudo insmod jiffies_module.ko
 sudo insmod seconds_module.ko
-sudo insmod pid.ko'''
+sudo insmod pid.ko''
 5. Check kernel messages
-'''dmesg'''
+''dmesg''
 6. Read /proc files
-'''cat /proc/hello
+''cat /proc/hello
 cat /proc/jiffies
-cat /proc/seconds'''
+cat /proc/seconds''
 7. Use pid module
-'''echo 1 > /proc/pid
-cat /proc/pid'''
+''echo 1 > /proc/pid
+cat /proc/pid''
 8. Remove modules
-'''sudo rmmod simple
+''sudo rmmod simple
 sudo rmmod hello
 sudo rmmod jiffies_module
 sudo rmmod seconds_module
-sudo rmmod pid'''
+sudo rmmod pid''
 9. Clean build files
-'''make clean '''
+''make clean ''
